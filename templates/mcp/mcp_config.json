@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "mermaid-renderer": {
+      "command": "python3",
+      "args": ["<MERMAID_SCRIPT_PATH>"]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "agent-auto-linker",
+  "displayName": "Agent Auto Linker v2.0",
+  "description": "워크스페이스에 마스터 .agent를 연결해주는 지능형 뇌 이식기 (Safe & Smart)",
+  "version": "2.0.0",
+  "publisher": "KevinJ",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Agent Auto Linker",
+      "properties": {
+        "agentAutoLinker.masterAgentPath": {
+          "type": "string",
+          "default": "",
+          "description": "마스터 .agent 폴더의 절대 경로입니다. (예: C:\\Users\\kevin\\.gemini\\antigravity-multi-agents\\.agent)"
+        },
+        "agentAutoLinker.enableAutoLink": {
+          "type": "boolean",
+          "default": true,
+          "description": "워크스페이스 오픈 시 .agent 심볼릭 링크를 자동으로 생성합니다."
+        },
+        "agentAutoLinker.enableGitignoreUpdate": {
+          "type": "boolean",
+          "default": true,
+          "description": ".gitignore에 .agent 항목이 없으면 자동으로 추가합니다."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinjhur/agent-auto-linker"
+  }
+}

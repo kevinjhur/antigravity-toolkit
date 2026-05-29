@@ -1,0 +1,3 @@
+[submodule "external/antigravity-awesome-skills"]
+	path = external/antigravity-awesome-skills
+	url = https://github.com/sickn33/antigravity-awesome-skills.git
